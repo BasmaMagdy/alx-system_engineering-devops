@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #  Bash script that gives you information about the holbertonschool file.
 
-if [ -e "holbertonschool" ]
+if [ -f "holbertonschool" ]
 then
   echo "school file exists"
   if [ -s "holbertonschool" ]
@@ -11,7 +11,7 @@ then
     echo "school file is empty"
   fi
 
-  if [ -f "holbertonschool" ]
+  if [ -e "holbertonschool" ]
   then
     echo "school file is a regular file"
   fi
