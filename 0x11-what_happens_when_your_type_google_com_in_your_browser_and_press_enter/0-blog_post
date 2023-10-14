@@ -1,0 +1,21 @@
+A step-down of the background workflow before you will get the output of google homepage:
+
+DNS Request: The first thing that happens is a DNS request. DNS stands for Domain Name System, which translates human-readable domain names like google.com into IP addresses, which computers can understand. Your computer sends a request to the DNS server to resolve the IP address of www.google.com.
+
+TCP/IP: Once the IP address is resolved, your computer initiates a TCP/IP connection to the server at that IP address. TCP stands for Transmission Control Protocol, and IP stands for Internet Protocol. Together, they form the backbone of the Internet and are responsible for delivering data between computers.
+
+Firewall: Before the connection is established, the server’s firewall checks to ensure that the request is legitimate and not harmful. The firewall is a security measure that protects the server from unauthorized access and attacks.
+
+HTTPS/SSL: Assuming the request passes through the firewall, the connection is secured using HTTPS/SSL. HTTPS stands for Hypertext Transfer Protocol Secure, and SSL stands for Secure Sockets Layer. It ensures that the data exchanged between your computer and the server is encrypted and cannot be intercepted by anyone else.
+
+Load-Balancer: The request is then passed to a load-balancer, which is responsible for distributing incoming traffic across multiple servers. This helps to ensure that no single server is overwhelmed and that the website remains available to users.
+
+Web Server: The request is then passed to a web server, which is responsible for serving the web pages. The web server retrieves the necessary files from the server’s storage and generates an HTML page that is sent back to your browser.
+
+Application Server: The HTML page may contain dynamic content that needs to be generated on the fly. In such cases, the request is passed to an application server, which is responsible for processing the request and generating the content.
+
+Database: If the application server needs to retrieve data from a database, it sends a request to the database server. The database server retrieves the data and sends it back to the application server, which generates the necessary content.
+
+Web Page Rendering: After retrieving the necessary data, the application server generates a response containing the HTML, CSS, JavaScript, and other resources required to render the webpage. This response is sent back to the browser over the established TCP connection.
+
+Browser Rendering: The browser receives the response and renders the webpage based on the received HTML, CSS, and JavaScript. It may also initiate additional requests for images, scripts, or other resources referenced in the webpage.
